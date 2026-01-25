@@ -4,10 +4,12 @@
   command = "npm run build"
   publish = "dist/Frontend"
 
+# SPA routing: redirect all requests to index.html for Angular routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
 
 # Cache configuration
 [[headers]]
